@@ -1,0 +1,184 @@
+/* General Container for Home Page */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+/* User Section (Header) */
+.user-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* User Greeting */
+.user-section h1 {
+    font-size: 24px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+/* Logout Button */
+.user-section button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.user-section button:hover {
+    background-color: #c0392b;
+}
+
+/* Expense Details Section */
+.Balance-amount {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.amounts-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.income-amount {
+    font-size: 20px;
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.expense-amount {
+    font-size: 20px;
+    color: #c0392b;
+    font-weight: bold;
+}
+
+/* Expense Form Section */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+form h1 {
+    font-size: 22px;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form label {
+    font-size: 16px;
+    color: #34495e;
+}
+
+form input, form select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+/* Expense Table Section */
+.expense-list {
+    margin-top: 30px;
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.expense-item:last-child {
+    border-bottom: none;
+}
+
+.expense-description {
+    font-size: 16px;
+    color: #2c3e50;
+    flex-grow: 1;
+}
+
+.expense-amount {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.delete-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #c0392b;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .user-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .user-section h1 {
+        margin-bottom: 15px;
+    }
+
+    .amounts-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .expense-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .expense-amount {
+        align-self: flex-end;
+        margin-top: 5px;
+    }
+}

@@ -1,0 +1,57 @@
+/* Container Styling */
+.Balance-amount {
+    font-size: 28px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f2f6;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Income & Expense Container */
+.amounts-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Income and Expense Labels */
+.amounts-container span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Styling for Income */
+.income-amount {
+    color: #27ae60;
+}
+
+/* Styling for Expense */
+.expense-amount {
+    color: #e74c3c;
+}
+
+/* Additional Styling for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .Balance-amount {
+        font-size: 24px;
+    }
+
+    .amounts-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .amounts-container span {
+        font-size: 22px;
+    }
+}

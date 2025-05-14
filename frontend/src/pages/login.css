@@ -1,0 +1,82 @@
+/* Full Page Container */
+.full-page-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Full viewport height */
+    background-color: #f4f6f9; /* Light background color */
+    padding: 20px;
+}
+
+/* Container for Login Page */
+.login-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Form Heading */
+.login-container h1 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Form Inputs and Labels */
+.login-container label {
+    display: block;
+    font-size: 16px;
+    color: #34495e;
+    margin-bottom: 5px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-bottom: 15px; /* Space between inputs */
+}
+
+/* Submit Button */
+.login-container button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Full width button */
+}
+
+.login-container button:hover {
+    background-color: #2980b9;
+}
+
+/* Signup Link */
+.login-container span {
+    display: block;
+    margin-top: 10px;
+}
+
+.login-container a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+/* Toast Container Styling */
+.Toastify__toast-container {
+    z-index: 9999; /* Ensure toast notifications are visible */
+}
